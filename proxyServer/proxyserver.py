@@ -91,7 +91,7 @@ while 1:
                         responsedata.append(data)
                     #Check status of the response and save data to cache
                     if(len(responsedata) > 0 and status < 400):
-                        with open('./'+filename, 'w') as tmpfile:
+                        with open('./'+filename, 'wb') as tmpfile:
                             tmpfile.writelines(responsedata)
                             print('[Wrote to cache]\n')
 
